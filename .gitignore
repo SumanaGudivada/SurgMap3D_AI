@@ -1,0 +1,38 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+datasets/
+
+# Model checkpoints
+weights/
+checkpoints/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated outputs
+outputs/logs/
+outputs/predictions/
+outputs/reconstructions/
+outputs/segmentation/
+outputs/reports/

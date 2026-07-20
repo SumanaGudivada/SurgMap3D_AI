@@ -1,0 +1,22 @@
+project:
+  name: SurgMap3D-AI
+  version: 1.0
+
+paths:
+  datasets: datasets/
+  models: models/
+  outputs: outputs/
+
+datasets:
+  cholec80: datasets/cholec80/
+  cholecseg8k: datasets/cholecseg8k/
+  scared: datasets/scared/
+
+training:
+  batch_size: 4
+  image_size: 512
+  device: auto
+
+logging:
+  level: INFO
+  
