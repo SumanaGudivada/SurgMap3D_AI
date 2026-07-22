@@ -1,22 +1,30 @@
 project:
+  # Basic project metadata.
   name: SurgMap3D-AI
-  version: 1.0
-
-paths:
-  datasets: datasets/
-  models: models/
-  outputs: outputs/
+  version: 1.0.0
+  author: SurgMap3D-AI Team
 
 datasets:
-  cholec80: datasets/cholec80/
-  cholecseg8k: datasets/cholecseg8k/
-  scared: datasets/scared/
+  # Dataset used when no explicit dataset is selected.
+  default_dataset: cholec80
 
-training:
-  batch_size: 4
-  image_size: 512
-  device: auto
+  # Supported datasets and their relative paths.
+  available_datasets:
+    cholec80: datasets/cholec80
+    cholecseg8k: datasets/cholecseg8k
+    scared: datasets/scared
 
 logging:
+  # Application logging destinations and verbosity.
   level: INFO
-  
+  log_directory: logs
+  log_file: app.log
+
+output:
+  # Root directory for generated project outputs.
+  output_directory: outputs
+
+visualization:
+  # Visualization result persistence settings.
+  save_results: true
+  visualization_directory: outputs/visualizations
